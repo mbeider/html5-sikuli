@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+    <title>HTML5 and sikuli</title>
+    <h:outputScript library="js" name="jquery-2.0.3.js" />
+    <h:outputScript library="js" name="html5Sikuli.js" />
+    <h:outputStylesheet library="css" name="style.css" />
+</h:head>
+<h:body>
+    <h:graphicImage library="images" name="rom.jpg" id="myimg" />
+    <canvas id="canvas" width="800" height="534"></canvas>
+    <div>
+        <button id="btnGrayscale">Grayscale</button>
+        <button id="btnThreshold">Threshold</button>
+        <button id="btnBrighten">Brighten</button>
+        <button id="btnUndo" disabled="disabled">Undo</button>
+    </div>
+</h:body>
+</html>
