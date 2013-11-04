@@ -3,8 +3,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>martins-developer-world</groupId>
 	<artifactId>html5-sikuli</artifactId>
+
 	<packaging>pom</packaging>
 	<version>0.0.1-SNAPSHOT</version>
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -13,11 +15,24 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
 	<build>
 		<finalName>html5-sikuli</finalName>
 	</build>
+
 	<modules>
 		<module>html5-sikuli-webapp</module>
-        <module>html5-sikuli-test</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.jboss.arquillian</groupId>
+                <artifactId>arquillian-bom</artifactId>
+                <version>1.1.1.Final</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
