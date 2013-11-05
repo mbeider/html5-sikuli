@@ -56,7 +56,7 @@ public class FilterTest {
     @Test
     @RunAsClient
     public void testGrayScale() throws FindFailed {
-        screen.wait(getPattern("originalImage.png", 0.6f));
+        screen.wait(getPattern("originalImage.png", 0.6f), 100);
         screen.find(getFullPath("btnUndo_disabled.png"));
         screen.click(getFullPath("btnGrayscale.png"));
         screen.find(getPattern("grayscaleImage.png", 0.9f));
